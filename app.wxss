@@ -1,0 +1,72 @@
+page {
+  background-color: #F2F1F6;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-auto {
+  flex: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-vcenter {
+  align-items: center;
+}
+
+/** fill height of parent **/
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+page {
+}
+
+.icon {
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-like{
+  background: url(../../image/thumbsup.png);
+  background-size: 21px 21px;
+}
+.icon-like-hl{
+  background: url(../../image/thumbsup_HL.png);
+  background-size: 21px 21px;
+}
+.icon-comment{
+  background: url(../../image/compose.png);
+  background-size: 21px 21px;
+}
+.icon-post{
+  background: url(../../image/paper-airplane.png);
+  background-size: 80rpx;
+}

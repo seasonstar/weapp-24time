@@ -1,0 +1,38 @@
+<view class="page-wrap">
+  <scroll-view class="container" scroll-y="true">
+    <view class="school-profile">
+      <view class="header flex flex-column flex-center">
+        <image class="avatar" src="{{current.avatar}}" mode="aspectFit"></image>
+        <view class="name">{{current.name}}</view>
+      </view>
+      <view class="card-body">
+        <text class="content">公告：{{current.description}}</text>
+      </view>
+    </view>
+
+    <view class="school-list">
+      <view class="list-intro">已开通树洞：</view>
+      <view class="school-ul flex flex-column"
+          wx:for="{{schools}}"
+          wx:for-item="item"
+          wx:key="{{item.letter}}">
+        <view class="letter">{{item.letter}}</view>
+        <view class="card-header flex flex-row"
+          wx:for="{{item.data}}"
+          wx:for-item="school"
+          wx:key="{{school.id}}"
+          bindtap="switchSchool"
+          data-schoolid="{{school.id}}"
+          >
+          <image class="avatar flex-auto" src="{{school.avatar}}" mode="aspectFit"></image>
+          <view class="school-name flex-stretch">{{school.name}}</view>
+        </view>
+      </view>
+      <view class="letter">没有我的学校？</view>
+      <view class="card-header flex flex-row">
+        <view class="add">+</view>
+        <view class="school-name flex-stretch">申请开通</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,31 @@
+<view class="page-wrap">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+
+    <view class="page-section">
+      <view class="textarea-wrp">
+        <textarea placeholder="说些什么" placeholder-style="color:#999" auto-focus="true" style="height: 5em" name="content"/>
+      </view>
+    </view>
+    <view wx:if="{{!postId}}" class="page-section flex post-images">
+      <image class="post-image"
+        wx:for="{{images}}"
+        wx:for-item="image"
+        wx:key="{{image}}"
+        mode="aspectFit"
+        bindtap='previewImage'
+        data-src='{{image}}'
+        src="{{image}}" />
+      <view class="add-image" bindtap="uploadToCos">+</view>
+    </view>
+
+    <view wx:if="{{!postId}}" class="page-section flex flex-row flex-vcenter">
+      <view class="page-section-title flex-auto">匿名</view>
+      <switch name="is_anonymous" class="flex-auto" />
+    </view>
+
+    <view class="btn-area">
+      <button type="primary" formType="submit">发布</button>
+    </view>
+  </form>
+
+</view>

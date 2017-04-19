@@ -1,0 +1,22 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/post/index",
+        "pages/school/index",
+        "pages/publish/index"
+    ],
+    "window": {
+        "backgroundColor": "white",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1AAD19",
+        "navigationBarTitleText": "24时区",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000,
+        "uploadFile": 30000
+    },
+    "debug": true
+}

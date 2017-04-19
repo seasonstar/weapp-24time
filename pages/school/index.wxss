@@ -1,0 +1,79 @@
+.school-list, .school-wrap{
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+}
+.school-profile{
+  border-bottom: 10px #F2F1F6 solid;
+  background-color: #fff;
+  color: #444;
+  font-size: 26px;
+}
+
+.school-profile .header{
+  height: 150px;
+}
+.school-profile .header .avatar{
+  max-width: 120rpx;
+  max-height: 120rpx;
+  border-radius: 120rpx;
+  margin: 32px 0 26px 0;
+}
+.school-profile .header .name{
+  color: #444;
+  font-size: 38rpx;
+  font-weight: normal;
+  text-align: left;
+  line-height: 48rpx;
+  margin-bottom: 0 18rpx;
+}
+.school-profile .card-body{
+  padding:6px 12px;
+  margin-bottom:12px;
+
+}
+.school-profile .card-body .content{
+  font-size: 32rpx;
+  line-height: 36rpx;
+  padding: 4px 0;
+}
+.list-intro{
+  padding: 8px 12px;
+  background-color: white;
+  font-size: 32rpx;
+}
+.school-list .letter {
+  padding: 8px 12px;
+  font-size: 32rpx;
+}
+.school-list .card-header{
+  background-color: white;
+}
+.school-list .card-header .avatar{
+  max-width: 72rpx;
+  max-height: 72rpx;
+  border-radius: 72rpx;
+  margin: 6px 12px;
+}
+.school-list .card-header .school-name{
+  color: #444;
+  font-size: 32rpx;
+  font-weight: normal;
+  text-align: left;
+  line-height: 48px;
+  flex: 3;
+}
+.school-list .card-header .add{
+  width: 72rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 48rpx;
+  color: #666;
+  font-weight: normal;
+  text-align: center;
+  margin: 6px 12px;
+  border-radius: 72rpx;
+  border : 1px solid #666;
+  box-sizing: border-box;
+}

@@ -1,0 +1,127 @@
+.post-list{
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+}
+
+.page-wrap{
+  position: relative;
+}
+.post-btn{
+  position: fixed;
+  bottom: 100rpx;
+  right: 60rpx;
+  z-index: 666;
+  width: 110rpx;
+  height: 110rpx;
+  opacity: 0.8;
+  background-color: #1AAD19;
+  border-radius: 110rpx;
+  box-shadow: 0 6rpx 6rpx rgba(0, 0, 0, .5)
+}
+.post-btn .icon{
+  width: 90rpx;
+  height: 90rpx;
+  margin: 8rpx 0 0 2px;
+}
+
+.post-card{
+  border-bottom: 5px #F2F1F6 solid;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  display: block;
+  font-size: 26px;
+}
+
+.card-header{
+  height: 48px;
+}
+.card-header.school{
+  background-color: #F2F1F6;
+
+}
+.card-header .avatar{
+  max-width: 72rpx;
+  max-height: 72rpx;
+  border-radius: 72rpx;
+  margin: 4px 12px;
+}
+.card-header .post-action{
+  width:16px;
+  height:16px;
+  color:#999;
+  margin:16px 12px 16px 0;
+}
+.school.card-header .post-action{
+  margin-left: 8px;
+}
+.card-header .post-name{
+  color: #444;
+  font-size: 32rpx;
+  font-weight: normal;
+  text-align: left;
+  line-height: 48px;
+  flex: 3;
+}
+.card-header .post-time{
+  color: #888;
+  font-size: 28rpx;
+  font-weight: normal;
+  text-align: right;
+  line-height: 48px;
+  padding: 0px 6px;
+  max-width: 150px;
+}
+.card-body{
+  padding: 0px 12px 4px 12px;
+  margin-bottom: 6px;
+}
+.card-body .content{
+  font-size: 32rpx;
+  line-height: 42rpx;
+  padding: 8rpx 0;
+}
+.card-body .post-images{
+  padding-right: 5px;
+  margin-top: 5px;
+}
+.card-body .post-image{
+  width: 210rpx;
+  height: 210rpx;
+  padding-right: 10rpx;
+}
+.card-buttons{
+  padding: 0px;
+}
+.card-buttons .icon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top:6px;
+  left:112rpx;
+}
+
+.card-buttons button{
+  font-size: 14px;
+  background: white;
+  border-radius: 0px;
+  border: 0px;
+  color: #666;
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+}
+.card-buttons button::after{
+  border-radius: 0px;
+  border: 1px #f3f3f3 solid;
+  border-bottom: 0px;
+}
+.card-buttons button.comment::after{
+  border-right: 0px;
+  border-bottom: 0px;
+}

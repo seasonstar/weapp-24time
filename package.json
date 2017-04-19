@@ -1,0 +1,13 @@
+{
+  "name": "node-24time",
+  "version": "1.0.0",
+  "description": "24时区微信小程序",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tencentyun/weapp-client-demo.git"
+  },
+  "keywords": [],
+  "author": "Seasonstar",
+  "license": "MIT"
+}

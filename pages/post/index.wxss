@@ -1,0 +1,136 @@
+.post-list{
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+}
+.post-card{
+  border-bottom: 5px #F2F1F6 solid;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  display: block;
+  font-size: 26px;
+}
+
+.card-header{
+  height: 48px;
+}
+.card-header .avatar{
+  max-width: 72rpx;
+  max-height: 72rpx;
+  border-radius: 72rpx;
+  margin: 4px 12px;
+}
+.card-header .post-name{
+  color: #444;
+  font-size: 32rpx;
+  font-weight: normal;
+  text-align: left;
+  line-height: 48px;
+  flex: 3;
+}
+.card-header .post-action{
+  width:16px;
+  height:16px;
+  color:#999;
+  margin:16px 12px 16px 0;
+}
+.card-header .post-time{
+  color: #888;
+  font-size: 28rpx;
+  font-weight: normal;
+  text-align: right;
+  line-height: 48px;
+  padding: 0px 6px;
+  max-width: 150px;
+}
+.card-body{
+  padding: 0px 12px 4px 12px;
+  margin-bottom: 6px;
+}
+.card-body .content{
+  font-size: 32rpx;
+  line-height: 42rpx;
+  padding: 4px 0;
+}
+.card-body .post-images{
+  padding-right: 5px;
+  margin-top: 5px;
+}
+.card-body .post-image{
+  width: 210rpx;
+  height: 210rpx;
+  padding-right: 10rpx;
+}
+.card-buttons{
+  padding: 0px;
+}
+.card-buttons .icon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top:6px;
+  left:112rpx;
+}
+.card-buttons button{
+  font-size: 28rpx;
+  background: white;
+  border-radius: 0px;
+  border: 0px;
+  color: #666;
+}
+.card-buttons button::after{
+  border-radius: 0px;
+  border: 1px #f3f3f3 solid;
+}
+.card-buttons button.comment::after{
+  border-right: 0px;
+}
+
+.comment-list{
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  background-color: #fff;
+}
+.comment-list .item{
+  border-bottom: 1px #F2F1F6 solid;
+  padding: 5px 0px;
+}
+.comment-list .avatar{
+  max-width: 72rpx;
+  max-height: 72rpx;
+  border-radius: 72rpx;
+  margin: 4px 12px;
+}
+.comment-list .content{
+  flex: 8;
+}
+.comment-list .content .header{
+  height: 32px;
+}
+.comment-list .content .comment{
+  font-size: 30rpx;
+  line-height: 36rpx;
+  color: #666;
+}
+
+.comment-list .content .header .comment-name{
+  flex: 3;
+  color: #444;
+  font-size: 32rpx;
+  font-weight: normal;
+  text-align: left;
+  line-height: 32px;
+}
+.comment-list .content .header .comment-time{
+  color: #888;
+  font-size: 28rpx;
+  font-weight: normal;
+  text-align: right;
+  line-height: 32px;
+  padding: 0px 12px;
+  max-width: 100px;
+}

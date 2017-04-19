@@ -1,0 +1,65 @@
+<view class="page-wrap">
+  <view class="post-btn" bindtap="publish" data-schoolid="{{school.id}}">
+    <image class="icon" src="../../image/paper-airplane.png" />
+  </view>
+  <scroll-view class="post-list"
+    enable-back-to-top="true"
+    bindscrolltolower="loadMore"
+    bindscrolltoupper="onRefresh"
+    upper-threshold="0"
+    lower-threshold="20"
+    scroll-y="true">
+    <view class="card-header school flex flex-row"
+        bindtap="switchSchool" data-schoolid="{{school.id}}">
+      <image class="avatar flex-auto" src="{{school.avatar}}" mode="aspectFit"></image>
+      <view class="post-name flex-stretch">
+        <view class="float-left">{{school.name}}</view>
+        <image class="float-left post-action"
+          src="../../image/arrow-down.png" />
+      </view>
+    </view>
+    <view class="post-card"
+      wx:for="{{posts}}"
+      wx:for-item="post"
+      wx:key="{{post.id}}"
+      >
+      <view class="card-header flex flex-row">
+        <image class="avatar flex-auto" src="{{post.user.avatar}}" mode="aspectFit"></image>
+        <view class="post-name flex-stretch">{{post.user.name}}</view>
+        <view class="post-time">{{post.createdAt}}</view>
+        <image class="post-action"
+          src="../../image/arrow-down.png"
+          bindtap="showActions"
+          data-postuser="{{post.user.id}}"
+          data-postid="{{post.id}}"/>
+      </view>
+      <view class="card-body">
+        <view class="content" bindtap="comment" data-postid="{{post.id}}">{{post.content}}</view>
+        <view class="post-images">
+          <image class="post-image"
+            wx:for="{{post.images}}"
+            wx:for-item="image"
+            wx:key="{{index}}"
+            mode="aspectFill"
+            bindtap='previewImage'
+            data-src='{{image.url}}'
+            data-postid='{{post.id}}'
+            src="{{image.url}}" />
+        </view>
+      </view>
+      <view class="card-buttons flex flex-row">
+        <button type="default" size="default" class="comment flex-auto" bindtap="comment" data-postid="{{post.id}}">
+          <image class="icon" src="../../image/compose.png" />{{ post.num_comments || '评论' }}
+        </button>
+        <button type="default" size="default" class="like flex-auto" bindtap="like" data-postid="{{post.id}}">
+          <block wx:if="{{ !post.is_liked }}">
+            <image class="icon" src="../../image/thumbsup.png" />{{ post.num_likes || '赞'}}
+          </block>
+          <block wx:else>
+            <image class="icon" src="../../image/thumbsup_HL.png" />{{ post.num_likes || '赞'}}
+          </block>
+        </button>
+      </view>
+    </view>
+  </scroll-view>
+</view>
