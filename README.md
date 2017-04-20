@@ -66,12 +66,19 @@ Demo
 ![](http://785i8w.com1.z0.glb.clouddn.com/WechatIMG1.jpeg?imageView/2/w/200)
 
 
-## 感谢
+## Credits && Inspiration
 
-[腾讯云微信小程序客户端 SDK](https://github.com/tencentyun/weapp-client-sdk)。
+[腾讯云微信小程序客户端 SDK](https://github.com/tencentyun/weapp-client-sdk)
 
-[微信小程序会话管理-客户端](https://github.com/CFETeam/weapp-session-client)。
+[微信小程序会话管理-客户端](https://github.com/CFETeam/weapp-session-client)
 
-[WeCOS-UGC-DEMO资源上传示例](https://github.com/tencentyun/wecos-ugc-upload-demo)。
+[WeCOS-UGC-DEMO资源上传示例](https://github.com/tencentyun/wecos-ugc-upload-demo)
 
 感谢以上项目的一些参考和启发
+
+
+## LICENSE
+
+[MIT](LICENSE)
+
+Please Open Issues if you have troubles.
