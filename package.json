@@ -1,11 +1,11 @@
 {
-  "name": "node-24time",
+  "name": "weapp-24time",
   "version": "1.0.0",
   "description": "24时区微信小程序",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tencentyun/weapp-client-demo.git"
+    "url": "https://github.com/seasonstar/weapp-24time"
   },
   "keywords": [],
   "author": "Seasonstar",
